@@ -39,26 +39,26 @@
       white-space: pre-wrap;
       word-wrap: break-word;
       height: auto;
-      padding: 5px @control-padding-horizontal - 1px;
+      padding: 0.05rem @control-padding-horizontal - 0.01rem;
     }
   }
   .DraftEditor-editorContainer .public-DraftEditor-content {
     height: auto;
-    padding: 5px @control-padding-horizontal - 1px;
+    padding: 0.05rem @control-padding-horizontal - 0.01rem;
   }
 }
 
 .@{mention-prefix-cls}-dropdown {
   .reset-component;
   margin-top: 1.5em;
-  max-height: 250px;
-  min-width: 120px;
+  max-height: 2.5rem;
+  min-width: 1.2rem;
   background-color: @component-background;
   box-shadow: @box-shadow-base;
   border-radius: @border-radius-base;
   z-index: @zindex-dropdown;
-  left: -9999px;
-  top: -9999px;
+  left: -99.99rem;
+  top: -99.99rem;
   position: absolute;
   outline: none;
   overflow-x: hidden;
@@ -80,8 +80,8 @@
   &-item {
     position: relative;
     display: block;
-    padding: 5px @control-padding-horizontal;
-    line-height: 22px;
+    padding: 0.05rem @control-padding-horizontal;
+    line-height: 0.22rem;
     font-weight: normal;
     color: @text-color;
     white-space: nowrap;
@@ -120,8 +120,8 @@
     }
 
     &-divider {
-      height: 1px;
-      margin: 1px 0;
+      height: 0.01rem;
+      margin: 0.01rem 0;
       overflow: hidden;
       background-color: @border-color-split;
       line-height: 0;

@@ -6,8 +6,8 @@
 .@{dropdown-prefix-cls} {
   .reset-component;
   position: absolute;
-  left: -9999px;
-  top: -9999px;
+  left: -99.99rem;
+  top: -99.99rem;
   z-index: @zindex-dropdown;
   display: block;
 
@@ -15,7 +15,7 @@
     position: relative;
 
     .@{ant-prefix}-btn > .@{iconfont-css-prefix}-down {
-      .iconfont-size-under-12px(10px);
+      .iconfont-size-under-12px(0.1rem);
     }
 
     .@{iconfont-css-prefix}-down:before {
@@ -38,7 +38,7 @@
     outline: none;
     position: relative;
     list-style-type: none;
-    padding: 4px 0;
+    padding: 0.04rem 0;
     margin: 0;
     text-align: left;
     background-color: @component-background;
@@ -48,7 +48,7 @@
 
     &-item-group-title {
       color: @text-color-secondary;
-      padding: 5px @control-padding-horizontal;
+      padding: 0.05rem @control-padding-horizontal;
       transition: all .3s;
     }
 
@@ -59,7 +59,7 @@
 
     &-item,
     &-submenu-title {
-      padding: 5px @control-padding-horizontal;
+      padding: 0.05rem @control-padding-horizontal;
       margin: 0;
       clear: both;
       font-size: @font-size-base;
@@ -68,18 +68,18 @@
       white-space: nowrap;
       cursor: pointer;
       transition: all .3s;
-      line-height: 22px;
+      line-height: 0.22rem;
 
       > .anticon:first-child {
-        min-width: 12px;
-        margin-right: 8px;
+        min-width: 0.12rem;
+        margin-right: 0.08rem;
       }
 
       > a {
         color: @text-color;
         display: block;
-        padding: 5px @control-padding-horizontal;
-        margin: -5px -@control-padding-horizontal;
+        padding: 0.05rem @control-padding-horizontal;
+        margin: -0.05rem -@control-padding-horizontal;
         transition: all .3s;
         &:focus {
           text-decoration: none;
@@ -108,11 +108,11 @@
       }
 
       &-divider {
-        height: 1px;
+        height: 0.01rem;
         overflow: hidden;
         background-color: @border-color-split;
         line-height: 0;
-        margin: 4px 0;
+        margin: 0.04rem 0;
       }
       .@{dropdown-prefix-cls}-menu-submenu-arrow {
         position: absolute;
@@ -122,13 +122,13 @@
           font-style: normal;
           content: "\e61f";
           color: @text-color-secondary;
-          .iconfont-size-under-12px(10px);
+          .iconfont-size-under-12px(0.1rem);
         }
       }
     }
 
     &-submenu-title {
-      padding-right: 26px;
+      padding-right: 0.26rem;
     }
 
     &-submenu-vertical {
@@ -140,7 +140,7 @@
       left: 100%;
       position: absolute;
       min-width: 100%;
-      margin-left: 4px;
+      margin-left: 0.04rem;
       transform-origin: 0 0;
     }
 
@@ -186,7 +186,7 @@
 .@{dropdown-prefix-cls}-trigger,
 .@{dropdown-prefix-cls}-link {
   .@{iconfont-css-prefix}-down {
-    .iconfont-size-under-12px(10px);
+    .iconfont-size-under-12px(0.1rem);
   }
   .@{iconfont-css-prefix}-ellipsis {
     text-shadow: 0 0 currentColor;
@@ -201,7 +201,7 @@
     padding-right: @padding-xs;
   }
   .@{iconfont-css-prefix}-down {
-    .iconfont-size-under-12px(10px);
+    .iconfont-size-under-12px(0.1rem);
   }
 }
 

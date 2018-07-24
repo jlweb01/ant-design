@@ -8,15 +8,15 @@
   position: fixed;
   z-index: @zindex-message;
   width: 100%;
-  top: 16px;
+  top: 0.16rem;
   left: 0;
   pointer-events: none;
 
   &-notice {
-    padding: 8px;
+    padding: 0.08rem;
     text-align: center;
     &:first-child {
-      margin-top: -8px;
+      margin-top: -0.08rem;
     }
   }
 
@@ -47,9 +47,9 @@
   }
 
   .@{iconfont-css-prefix} {
-    margin-right: 8px;
+    margin-right: 0.08rem;
     font-size: @font-size-lg;
-    top: 1px;
+    top: 0.01rem;
     position: relative;
   }
 
@@ -63,8 +63,8 @@
 @keyframes MessageMoveOut {
   0% {
     opacity: 1;
-    max-height: 150px;
-    padding: 8px;
+    max-height: 1.5rem;
+    padding: 0.08rem;
   }
   100% {
     opacity: 0;

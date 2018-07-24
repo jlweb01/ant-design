@@ -1,7 +1,7 @@
 @import "../../style/themes/default";
 @import "../../style/mixins/index";
 
-@input-affix-width: 19px;
+@input-affix-width: 0.19rem;
 
 // size mixins for input
 .input-lg() {
@@ -21,13 +21,13 @@
   border-color: ~`colorPalette("@{color}", 5)`;
   outline: 0;
   box-shadow: @input-outline-offset @outline-blur-size @outline-width fade(@color, 20%);
-  border-right-width: 1px !important;
+  border-right-width: 0.01rem !important;
 }
 
 // == when hoverd
 .hover(@color: @input-hover-border-color) {
   border-color: ~`colorPalette("@{color}", 5)`;
-  border-right-width: 1px !important;
+  border-right-width: 0.01rem !important;
 }
 
 .disabled() {
@@ -104,7 +104,7 @@
   }
 
   > [class*="col-"] {
-    padding-right: 8px;
+    padding-right: 0.08rem;
     &:last-child {
       padding-right: 0;
     }
@@ -122,7 +122,7 @@
 
   &-addon,
   &-wrap {
-    width: 1px; // To make addon/wrap as small as possible
+    width: 0.01rem; // To make addon/wrap as small as possible
     white-space: nowrap;
     vertical-align: middle;
   }
@@ -137,11 +137,11 @@
     margin-bottom: 0;
     &:focus {
       z-index: 1; // Fix https://gw.alipayobjects.com/zos/rmsportal/DHNpoqfMXSfrSnlZvhsJ.png
-      border-right-width: 1px;
+      border-right-width: 0.01rem;
     }
     &:hover {
       z-index: 1;
-      border-right-width: 1px;
+      border-right-width: 0.01rem;
     }
   }
 
@@ -160,11 +160,11 @@
 
     // Reset Select's style in addon
     .@{ant-prefix}-select {
-      margin: -(@input-padding-vertical-base + 1px) (-@input-padding-horizontal-base);  // lesshint spaceAroundOperator: false
+      margin: -(@input-padding-vertical-base + 0.01rem) (-@input-padding-horizontal-base);  // lesshint spaceAroundOperator: false
 
       .@{ant-prefix}-select-selection {
         background-color: inherit;
-        margin: -1px;
+        margin: -0.01rem;
         border: @border-width-base @border-style-base transparent;
         box-shadow: none;
       }
@@ -307,7 +307,7 @@
     & > .@{ant-prefix}-time-picker:last-child .@{ant-prefix}-time-picker-input {
       border-top-right-radius: @border-radius-base;
       border-bottom-right-radius: @border-radius-base;
-      border-right-width: 1px;
+      border-right-width: 0.01rem;
     }
   }
 }
@@ -338,11 +338,11 @@
   }
 
   .@{inputClass}-prefix {
-    left: @input-padding-horizontal-base + 1px;
+    left: @input-padding-horizontal-base + 0.01rem;
   }
 
   .@{inputClass}-suffix {
-    right: @input-padding-horizontal-base + 1px;
+    right: @input-padding-horizontal-base + 0.01rem;
   }
 
   .@{inputClass}:not(:first-child) {

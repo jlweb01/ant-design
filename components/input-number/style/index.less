@@ -12,7 +12,7 @@
   display: inline-block;
   border: @border-width-base @border-style-base @border-color-base;
   border-radius: @border-radius-base;
-  width: 90px;
+  width: 0.9rem;
 
   &-handler {
     text-align: center;
@@ -37,14 +37,14 @@
   &-handler-up-inner,
   &-handler-down-inner {
     .iconfont-mixin();
-    line-height: 12px;
+    line-height: 0.12rem;
     user-select: none;
     position: absolute;
-    width: 12px;
-    height: 12px;
+    width: 0.12rem;
+    height: 0.12rem;
     transition: all 0.1s linear;
-    .iconfont-size-under-12px(7px);
-    right: 4px;
+    .iconfont-size-under-12px(0.07rem);
+    right: 0.04rem;
     color: @text-color-secondary;
   }
 
@@ -71,12 +71,12 @@
     text-align: left;
     outline: 0;
     -moz-appearance: textfield;
-    height: @input-height-base - 2px;
+    height: @input-height-base - 0.02rem;
     transition: all 0.3s linear;
     background-color: transparent;
     border: 0;
     border-radius: @border-radius-base;
-    padding: 0 @control-padding-horizontal - 1px;
+    padding: 0 @control-padding-horizontal - 0.01rem;
     .placeholder();
   }
 
@@ -85,7 +85,7 @@
     font-size: @font-size-lg;
 
     input {
-      height: @input-height-lg - 2px;
+      height: @input-height-lg - 0.02rem;
     }
   }
 
@@ -93,14 +93,14 @@
     padding: 0;
 
     input {
-      height: @input-height-sm - 2px;
-      padding: 0 @control-padding-horizontal-sm - 1px;
+      height: @input-height-sm - 0.02rem;
+      padding: 0 @control-padding-horizontal-sm - 0.01rem;
     }
   }
 
   &-handler-wrap {
     border-left: @border-width-base @border-style-base @border-color-base;
-    width: 22px;
+    width: 0.22rem;
     height: 100%;
     background: @component-background;
     position: absolute;
@@ -123,7 +123,7 @@
     cursor: pointer;
     &-inner {
       top: 50%;
-      margin-top: -6px;
+      margin-top: -0.06rem;
       &:before {
         text-align: center;
         content: "\e61e";
@@ -136,11 +136,11 @@
 
   &-handler-down {
     border-top: @border-width-base @border-style-base @border-color-base;
-    top: -1px;
+    top: -0.01rem;
     cursor: pointer;
     &-inner {
       top: 50%;
-      margin-top: -6px;
+      margin-top: -0.06rem;
       &:before {
         text-align: center;
         content: "\e61d";

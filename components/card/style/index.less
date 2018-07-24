@@ -2,7 +2,7 @@
 @import "../../style/mixins/index";
 
 @card-prefix-cls: ~"@{ant-prefix}-card";
-@card-head-height: 48px;
+@card-head-height: 0.48rem;
 @card-hover-border: rgba(0, 0, 0, 0.09);
 
 .@{card-prefix-cls} {
@@ -30,7 +30,7 @@
     padding: 0 @card-padding-base;
     border-radius: @border-radius-sm @border-radius-sm 0 0;
     .clearfix;
-    margin-bottom: -1px; // Fix card grid overflow bug: https://gw.alipayobjects.com/zos/rmsportal/XonYxBikwpgbqIQBeuhk.png
+    margin-bottom: -0.01rem; // Fix card grid overflow bug: https://gw.alipayobjects.com/zos/rmsportal/XonYxBikwpgbqIQBeuhk.png
     min-height: @card-head-height;
 
     &-wrapper {
@@ -50,7 +50,7 @@
     }
 
     .@{ant-prefix}-tabs {
-      margin-bottom: -17px;
+      margin-bottom: -0.17rem;
       clear: both;
 
       &-bar {
@@ -61,7 +61,7 @@
 
   &-extra {
     float: right;
-    padding: @card-head-padding + 1.5px 0;
+    padding: @card-head-padding + 1.0.05rem 0;
     text-align: right;
     // https://stackoverflow.com/a/22429853/3040605
     margin-left: auto;
@@ -73,14 +73,14 @@
   }
 
   &-contain-grid:not(&-loading) {
-    margin: -1px 0 0 -1px;
+    margin: -0.01rem 0 0 -0.01rem;
     padding: 0;
   }
 
   &-grid {
     border-radius: 0;
     border: 0;
-    box-shadow: 1px 0 0 0 @border-color-split, 0 1px 0 0 @border-color-split, 1px 1px 0 0 @border-color-split, 1px 0 0 0 @border-color-split inset, 0 1px 0 0 @border-color-split inset;
+    box-shadow: 0.01rem 0 0 0 @border-color-split, 0 0.01rem 0 0 @border-color-split, 0.01rem 0.01rem 0 0 @border-color-split, 0.01rem 0 0 0 @border-color-split inset, 0 0.01rem 0 0 @border-color-split inset;
     width: 33.33%;
     float: left;
     padding: @card-padding-base;
@@ -117,15 +117,15 @@
     & > li {
       float: left;
       text-align: center;
-      margin: 12px 0;
+      margin: 0.12rem 0;
       color: @text-color-secondary;
 
       & > span {
         display: inline-block;
-        font-size: 14px;
+        font-size: 0.14rem;
         cursor: pointer;
-        line-height: 22px;
-        min-width: 32px;
+        line-height: 0.22rem;
+        min-width: 0.32rem;
         position: relative;
 
         &:hover {
@@ -134,15 +134,15 @@
         }
 
         & > .anticon {
-          font-size: 16px;
-          line-height: 22px;
+          font-size: 0.16rem;
+          line-height: 0.22rem;
           display: block;
           width: 100%;
         }
 
         a {
           color: @text-color-secondary;
-          line-height: 22px;
+          line-height: 0.22rem;
           display: inline-block;
           width: 100%;
 
@@ -182,26 +182,26 @@
   }
 
   &-type-inner &-body {
-    padding: 16px @card-padding-base;
+    padding: 0.16rem @card-padding-base;
   }
 
   &-type-inner &-extra {
-    padding: @card-inner-head-padding + 1.5px 0;
+    padding: @card-inner-head-padding + 1.0.05rem 0;
   }
 
   &-meta {
-    margin: -4px 0;
+    margin: -0.04rem 0;
     .clearfix;
 
     &-avatar {
-      padding-right: 16px;
+      padding-right: 0.16rem;
       float: left;
     }
 
     &-detail {
       overflow: hidden;
       > div:not(:last-child) {
-        margin-bottom: 8px;
+        margin-bottom: 0.08rem;
       }
     }
 
@@ -230,8 +230,8 @@
   }
 
   &-loading-block {
-    height: 14px;
-    margin: 4px 0;
+    height: 0.14rem;
+    margin: 0.04rem 0;
     border-radius: @border-radius-sm;
     background: linear-gradient(90deg, rgba(207, 216, 220, .2), rgba(207, 216, 220, .4), rgba(207, 216, 220, .2));
     animation: card-loading 1.4s ease infinite;

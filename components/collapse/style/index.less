@@ -28,7 +28,7 @@
     }
 
     > .@{collapse-prefix-cls}-header {
-      line-height: 22px;
+      line-height: 0.22rem;
       padding: @collapse-header-padding;
       color: @heading-color;
       cursor: pointer;
@@ -41,7 +41,7 @@
         font-size: @font-size-sm;
         position: absolute;
         display: inline-block;
-        line-height: 46px;
+        line-height: 0.46rem;
         vertical-align: top;
         transition: transform 0.24s;
         top: 0;
@@ -58,7 +58,7 @@
 
     &.@{collapse-prefix-cls}-no-arrow {
       > .@{collapse-prefix-cls}-header {
-        padding-left: 12px;
+        padding-left: 0.12rem;
       }
     }
   }
@@ -100,7 +100,7 @@
   }
 
   &-borderless > &-item {
-    border-bottom: 1px solid @border-color-base;
+    border-bottom: 0.01rem solid @border-color-base;
   }
 
   &-borderless > &-item:last-child,
@@ -114,7 +114,7 @@
   }
 
   &-borderless > &-item > &-content > &-content-box {
-    padding-top: 4px;
+    padding-top: 0.04rem;
   }
 
   & &-item-disabled > &-header {

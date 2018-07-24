@@ -24,8 +24,8 @@
     margin-right: 0;
     padding-right: 0;
     .@{progress-prefix-cls}-show-info & {
-      padding-right: ~"calc(2em + 8px)";
-      margin-right: ~"calc(-2em - 8px)";
+      padding-right: ~"calc(2em + 0.08rem)";
+      margin-right: ~"calc(-2em - 0.08rem)";
     }
   }
 
@@ -33,7 +33,7 @@
     display: inline-block;
     width: 100%;
     background-color: @progress-remaining-color;
-    border-radius: 100px;
+    border-radius: 1rem;
     vertical-align: middle;
     position: relative;
   }
@@ -49,7 +49,7 @@
 
   &-success-bg,
   &-bg {
-    border-radius: 100px;
+    border-radius: 1rem;
     background-color: @progress-default-color;
     transition: all .4s @ease-out-circ 0s;
     position: relative;
@@ -67,7 +67,7 @@
     width: 2em;
     text-align: left;
     font-size: 1em;
-    margin-left: 8px;
+    margin-left: 0.08rem;
     vertical-align: middle;
     display: inline-block;
     color: @text-color-secondary;
@@ -87,7 +87,7 @@
       right: 0;
       bottom: 0;
       background: @component-background;
-      border-radius: 10px;
+      border-radius: 0.1rem;
       animation: ~"@{ant-prefix}-progress-active" 2.4s @ease-out-quint infinite;
     }
   }

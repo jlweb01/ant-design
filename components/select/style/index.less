@@ -13,16 +13,16 @@
   text-rendering: auto;
   opacity: 0;
   position: absolute;
-  right: @control-padding-horizontal - 1px;
+  right: @control-padding-horizontal - 0.01rem;
   z-index: 1;
   background: @component-background;
   top: 50%;
   font-size: @font-size-sm;
   color: @disabled-color;
-  width: 12px;
-  height: 12px;
-  margin-top: -6px;
-  line-height: 12px;
+  width: 0.12rem;
+  height: 0.12rem;
+  margin-top: -0.06rem;
+  line-height: 0.12rem;
   cursor: pointer;
   transition: color 0.3s ease, opacity 0.15s ease;
   &:before {
@@ -57,7 +57,7 @@
     .iconfont-mixin();
     position: absolute;
     top: 50%;
-    right: @control-padding-horizontal - 1px;
+    right: @control-padding-horizontal - 0.01rem;
     line-height: 1;
     margin-top: -@font-size-sm / 2;
     transform-origin: 50% 50%;
@@ -86,7 +86,7 @@
     border: @border-width-base @border-style-base @border-color-base;
     // strange align fix for chrome but works
     // https://gw.alipayobjects.com/zos/rmsportal/VFTfKXJuogBAXcvfAUWJ.gif
-    border-top-width: @border-width-base + 0.02px;
+    border-top-width: @border-width-base + 0.002rem;
     transition: all .3s @ease-in-out;
 
     &:hover {
@@ -113,7 +113,7 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       max-width: 100%;
-      padding-right: 20px;
+      padding-right: 0.2rem;
     }
   }
 
@@ -145,7 +145,7 @@
   &-disabled &-selection--multiple &-selection__choice {
     background: @background-color-base;
     color: #aaa;
-    padding-right: 10px;
+    padding-right: 0.1rem;
     &__remove {
       display: none;
     }
@@ -159,10 +159,10 @@
 
   &-selection__rendered {
     display: block;
-    margin-left: @control-padding-horizontal - 1px;
-    margin-right: @control-padding-horizontal - 1px;
+    margin-left: @control-padding-horizontal - 0.01rem;
+    margin-right: @control-padding-horizontal - 0.01rem;
     position: relative;
-    line-height: @input-height-base - 2px;
+    line-height: @input-height-base - 0.02rem;
     // https://github.com/ant-design/ant-design/issues/3481#issuecomment-254721026
     &:after {
       content: '.';
@@ -179,14 +179,14 @@
       height: @input-height-lg;
     }
     .@{select-prefix-cls}-selection__rendered {
-      line-height: @input-height-lg - 2px;
+      line-height: @input-height-lg - 0.02rem;
     }
     .@{select-prefix-cls}-selection--multiple {
       min-height: @input-height-lg;
       .@{select-prefix-cls}-selection__rendered {
         li {
-          height: @input-height-lg - 8px;
-          line-height: @input-height-lg - 8px;
+          height: @input-height-lg - 0.08rem;
+          line-height: @input-height-lg - 0.08rem;
         }
       }
       .@{select-prefix-cls}-selection__clear {
@@ -200,15 +200,15 @@
       height: @input-height-sm;
     }
     .@{select-prefix-cls}-selection__rendered {
-      line-height: @input-height-sm - 2px;
-      margin: 0 @control-padding-horizontal-sm - 1px;
+      line-height: @input-height-sm - 0.02rem;
+      margin: 0 @control-padding-horizontal-sm - 0.01rem;
     }
     .@{select-prefix-cls}-selection--multiple {
       min-height: @input-height-sm;
       .@{select-prefix-cls}-selection__rendered {
         li {
-          height: @input-height-sm - 8px;
-          line-height: @input-height-sm - 10px;
+          height: @input-height-sm - 0.08rem;
+          line-height: @input-height-sm - 0.1rem;
         }
       }
       .@{select-prefix-cls}-selection__clear {
@@ -239,12 +239,12 @@
     position: absolute;
     top: 50%;
     left: 0;
-    right: 9px;
+    right: 0.09rem;
     color: @input-placeholder-color;
-    line-height: 20px;
-    height: 20px;
+    line-height: 0.2rem;
+    height: 0.2rem;
     max-width: 100%;
-    margin-top: -10px;
+    margin-top: -0.1rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -257,8 +257,8 @@
 
   &-search__field__mirror {
     position: absolute;
-    top: -9999px;
-    left: -9999px;
+    top: -99.99rem;
+    left: -99.99rem;
     white-space: pre;
     pointer-events: none;
   }
@@ -292,7 +292,7 @@
   &-selection--multiple {
     min-height: @input-height-base;
     cursor: text;
-    padding-bottom: 3px;
+    padding-bottom: 0.03rem;
     .clearfix;
 
     .@{select-prefix-cls}-search--inline {
@@ -308,37 +308,37 @@
     }
 
     .@{select-prefix-cls}-selection__rendered {
-      margin-left: 5px;
-      margin-bottom: -3px;
+      margin-left: 0.05rem;
+      margin-bottom: -0.03rem;
       height: auto;
     }
 
     .@{select-prefix-cls}-selection__placeholder {
-      margin-left: 6px;
+      margin-left: 0.06rem;
     }
 
     > ul > li,
     .@{select-prefix-cls}-selection__rendered > ul > li {  // for tree-select
-      margin-top: 3px;
-      height: @input-height-base - 8px;
-      line-height: @input-height-base - 8px - 2px;
+      margin-top: 0.03rem;
+      height: @input-height-base - 0.08rem;
+      line-height: @input-height-base - 0.08rem - 0.02rem;
     }
 
     .@{select-prefix-cls}-selection__choice {
       color: @tag-default-color;
       background-color: @tag-default-bg;
-      border: 1px solid @border-color-split;
+      border: 0.01rem solid @border-color-split;
       border-radius: @border-radius-sm;
       cursor: default;
       float: left;
-      margin-right: 4px;
+      margin-right: 0.04rem;
       max-width: 99%;
       position: relative;
       overflow: hidden;
       transition: padding .3s @ease-in-out;
-      padding: 0 20px 0 10px;
+      padding: 0 0.2rem 0 0.1rem;
       &__disabled {
-        padding: 0 10px;
+        padding: 0 0.1rem;
       }
     }
 
@@ -360,9 +360,9 @@
       font-weight: bold;
       transition: all .3s;
       font-size: @font-size-sm;
-      .iconfont-size-under-12px(10px);
+      .iconfont-size-under-12px(0.1rem);
       position: absolute;
-      right: 4px;
+      right: 0.04rem;
       &:hover {
         color: #404040;
       }
@@ -377,11 +377,11 @@
   }
 
   &-allow-clear &-selection--single &-selection-selected-value {
-    padding-right: 16px;
+    padding-right: 0.16rem;
   }
 
   &-allow-clear &-selection--multiple &-selection__rendered {
-    margin-right: 20px; // In case that clear button will overlap content
+    margin-right: 0.2rem; // In case that clear button will overlap content
   }
 
   &-open {
@@ -416,7 +416,7 @@
     }
   }
   &-combobox&-allow-clear &-selection:hover &-selection__rendered {
-    margin-right: 20px; // In case that clear button will overlap content
+    margin-right: 0.2rem; // In case that clear button will overlap content
   }
 }
 
@@ -450,8 +450,8 @@
   border-radius: @border-radius-base;
   box-sizing: border-box;
   z-index: @zindex-dropdown;
-  left: -9999px;
-  top: -9999px;
+  left: -99.99rem;
+  top: -99.99rem;
   position: absolute;
   outline: none;
   font-size: @font-size-base;
@@ -461,7 +461,7 @@
     margin-bottom: 0;
     padding-left: 0; // Override default ul/ol
     list-style: none;
-    max-height: 250px;
+    max-height: 2.5rem;
     overflow: auto;
 
     &-item-group-list {
@@ -469,15 +469,15 @@
       padding: 0;
 
       > .@{select-prefix-cls}-dropdown-menu-item {
-        padding-left: 20px;
+        padding-left: 0.2rem;
       }
     }
 
     &-item-group-title {
       color: @text-color-secondary;
       padding: 0 @control-padding-horizontal;
-      height: 32px;
-      line-height: 32px;
+      height: 0.32rem;
+      line-height: 0.32rem;
       font-size: @font-size-sm;
     }
 
@@ -489,8 +489,8 @@
     &-item {
       position: relative;
       display: block;
-      padding: 5px @control-padding-horizontal;
-      line-height: 22px;
+      padding: 0.05rem @control-padding-horizontal;
+      line-height: 0.22rem;
       font-weight: normal;
       color: @text-color;
       white-space: nowrap;
@@ -536,8 +536,8 @@
       }
 
       &-divider {
-        height: 1px;
-        margin: 1px 0;
+        height: 0.01rem;
+        margin: 0.01rem 0;
         overflow: hidden;
         background-color: @border-color-split;
         line-height: 0;
@@ -550,7 +550,7 @@
       &:after {
         .iconfont-font("\e632");
         color: transparent;
-        .iconfont-size-under-12px(10px);
+        .iconfont-size-under-12px(0.1rem);
         transition: all 0.2s ease;
         position: absolute;
         top: 50%;

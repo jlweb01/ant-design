@@ -27,8 +27,8 @@
     display: inline-block;
     vertical-align: middle;
     height: @pagination-item-size;
-    line-height: @pagination-item-size - 2px;
-    margin-right: 8px;
+    line-height: @pagination-item-size - 0.02rem;
+    margin-right: 0.08rem;
   }
 
   &-item {
@@ -37,14 +37,14 @@
     user-select: none;
     min-width: @pagination-item-size;
     height: @pagination-item-size;
-    line-height: @pagination-item-size - 2px;
+    line-height: @pagination-item-size - 0.02rem;
     text-align: center;
     list-style: none;
     display: inline-block;
     vertical-align: middle;
     border: @border-width-base @border-style-base @border-color-base;
     background-color: @component-background;
-    margin-right: 8px;
+    margin-right: 0.08rem;
     font-family: @pagination-font-family;
     outline: 0;
 
@@ -52,7 +52,7 @@
       text-decoration: none;
       color: @text-color;
       transition: none;
-      margin: 0 6px;
+      margin: 0 0.06rem;
     }
 
     &:focus,
@@ -91,7 +91,7 @@
     &:after {
       content: "•••";
       display: block;
-      letter-spacing: 2px;
+      letter-spacing: 0.02rem;
       color: @disabled-color;
       text-align: center;
     }
@@ -100,8 +100,8 @@
     &:hover {
       &:after {
         color: @primary-color;
-        .iconfont-size-under-12px(8px);
-        letter-spacing: -1px;
+        .iconfont-size-under-12px(0.08rem);
+        letter-spacing: -0.01rem;
         font-family: "anticon";
       }
     }
@@ -128,7 +128,7 @@
   &-prev,
   &-jump-prev,
   &-jump-next {
-    margin-right: 8px;
+    margin-right: 0.08rem;
   }
   &-prev,
   &-next,
@@ -170,9 +170,9 @@
       transition: all .3s;
 
       &:after {
-        font-size: 12px;
+        font-size: 0.12rem;
         display: block;
-        height: @pagination-item-size - 2px;
+        height: @pagination-item-size - 0.02rem;
         font-family: "anticon";
         text-align: center;
         font-weight: 500;
@@ -215,17 +215,17 @@
   }
 
   &-slash {
-    margin: 0 10px 0 5px;
+    margin: 0 0.1rem 0 0.05rem;
   }
 
   &-options {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 16px;
+    margin-left: 0.16rem;
 
     &-size-changer.@{ant-prefix}-select {
       display: inline-block;
-      margin-right: 8px;
+      margin-right: 0.08rem;
     }
 
     &-quick-jumper {
@@ -236,8 +236,8 @@
 
       input {
         .input;
-        margin: 0 8px;
-        width: 50px;
+        margin: 0 0.08rem;
+        width: 0.5rem;
       }
     }
   }
@@ -259,17 +259,17 @@
 
   &-simple &-simple-pager {
     display: inline-block;
-    margin-right: 8px;
+    margin-right: 0.08rem;
     height: @pagination-item-size-sm;
 
     input {
-      margin-right: 8px;
+      margin-right: 0.08rem;
       box-sizing: border-box;
       background-color: @component-background;
       border-radius: @border-radius-base;
       border: @border-width-base @border-style-base @border-color-base;
       outline: none;
-      padding: 0 6px;
+      padding: 0 0.06rem;
       height: 100%;
       text-align: center;
       transition: border-color .3s;
@@ -290,7 +290,7 @@
     margin: 0;
     min-width: @pagination-item-size-sm;
     height: @pagination-item-size-sm;
-    line-height: @pagination-item-size-sm - 2px;
+    line-height: @pagination-item-size-sm - 0.02rem;
   }
 
   &.mini &-item:not(&-item-active) {
@@ -324,14 +324,14 @@
   }
 
   &.mini &-options {
-    margin-left: 2px;
+    margin-left: 0.02rem;
     &-quick-jumper {
       height: @pagination-item-size-sm;
       line-height: @pagination-item-size-sm;
 
       input {
         .input-sm;
-        width: 44px;
+        width: 0.44rem;
       }
     }
   }

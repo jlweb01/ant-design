@@ -10,11 +10,11 @@
   display: inline-block;
   box-sizing: border-box;
   height: @switch-height;
-  min-width: 44px;
-  line-height: @switch-height - 2px;
+  min-width: 0.44rem;
+  line-height: @switch-height - 0.02rem;
   vertical-align: middle;
-  border-radius: 100px;
-  border: 1px solid transparent;
+  border-radius: 1rem;
+  border: 0.01rem solid transparent;
   background-color: @disabled-color;
   cursor: pointer;
   transition: all @switch-duration;
@@ -23,19 +23,19 @@
   &-inner {
     color: #fff;
     font-size: @font-size-sm;
-    margin-left: 24px;
-    margin-right: 6px;
+    margin-left: 0.24rem;
+    margin-right: 0.06rem;
     display: block;
   }
 
   &:before,
   &:after {
     position: absolute;
-    width: @switch-height - 4px;
-    height: @switch-height - 4px;
-    left: 1px;
-    top: 1px;
-    border-radius: 18px;
+    width: @switch-height - 0.04rem;
+    height: @switch-height - 0.04rem;
+    left: 0.01rem;
+    top: 0.01rem;
+    border-radius: 0.18rem;
     background-color: @component-background;
     content: " ";
     cursor: pointer;
@@ -43,12 +43,12 @@
   }
 
   &:after {
-    box-shadow: 0 2px 4px 0 rgba(0, 35, 11, .2);
+    box-shadow: 0 0.02rem 0.04rem 0 rgba(0, 35, 11, .2);
   }
 
   &:active:before,
   &:active:after {
-    width: 24px;
+    width: 0.24rem;
   }
 
   &:before {
@@ -59,7 +59,7 @@
     background: transparent;
     z-index: 1;
     display: none;
-    font-size: 12px;
+    font-size: 0.12rem;
   }
 
   &-loading:before {
@@ -72,7 +72,7 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px fade(@switch-color, 20%);
+    box-shadow: 0 0 0 0.02rem fade(@switch-color, 20%);
     outline: 0;
   }
 
@@ -82,24 +82,24 @@
 
   &-small {
     height: @switch-sm-height;
-    min-width: 28px;
-    line-height: @switch-sm-height - 2px;
+    min-width: 0.28rem;
+    line-height: @switch-sm-height - 0.02rem;
 
     .@{switch-prefix-cls}-inner {
-      margin-left: 18px;
-      margin-right: 3px;
+      margin-left: 0.18rem;
+      margin-right: 0.03rem;
       font-size: @font-size-sm;
     }
 
     &:before,
     &:after {
-      width: @switch-sm-height - 4px;
-      height: @switch-sm-height - 4px;
+      width: @switch-sm-height - 0.04rem;
+      height: @switch-sm-height - 0.04rem;
     }
 
     &:active:before,
     &:active:after {
-      width: 16px;
+      width: 0.16rem;
     }
   }
 
@@ -109,8 +109,8 @@
       margin-left: @switch-sm-checked-margin-left;
     }
     .@{switch-prefix-cls}-inner {
-      margin-left: 3px;
-      margin-right: 18px;
+      margin-left: 0.03rem;
+      margin-right: 0.18rem;
     }
   }
 
@@ -123,19 +123,19 @@
     background-color: @switch-color;
 
     .@{switch-prefix-cls}-inner {
-      margin-left: 6px;
-      margin-right: 24px;
+      margin-left: 0.06rem;
+      margin-right: 0.24rem;
     }
 
     &:before {
       left: 100%;
-      margin-left: -19px;
+      margin-left: -0.19rem;
     }
 
     &:after {
       left: 100%;
       transform: translateX(-100%);
-      margin-left: -1px;
+      margin-left: -0.01rem;
     }
   }
 

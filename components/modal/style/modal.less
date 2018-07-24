@@ -5,8 +5,8 @@
   position: relative;
   width: auto;
   margin: 0 auto;
-  top: 100px;
-  padding-bottom: 24px;
+  top: 1rem;
+  padding-bottom: 0.24rem;
 
   &-wrap {
     position: fixed;
@@ -23,7 +23,7 @@
   &-title {
     margin: 0;
     font-size: @font-size-lg;
-    line-height: 22px;
+    line-height: 0.22rem;
     font-weight: 500;
     color: @heading-color;
   }
@@ -60,9 +60,9 @@
       text-align: center;
       text-transform: none;
       text-rendering: auto;
-      width: 56px;
-      height: 56px;
-      line-height: 56px;
+      width: 0.56rem;
+      height: 0.56rem;
+      line-height: 0.56rem;
       font-size: @font-size-lg;
 
       &:before {
@@ -80,7 +80,7 @@
   }
 
   &-header {
-    padding: 16px 24px;
+    padding: 0.16rem 0.24rem;
     border-radius: @border-radius-base @border-radius-base 0 0;
     background: @component-background;
     color: @text-color;
@@ -88,7 +88,7 @@
   }
 
   &-body {
-    padding: 24px;
+    padding: 0.24rem;
     font-size: @font-size-base;
     line-height: @line-height-base;
     word-wrap: break-word;
@@ -96,11 +96,11 @@
 
   &-footer {
     border-top: @border-width-base @border-style-base @border-color-split;
-    padding: 10px 16px;
+    padding: 0.1rem 0.16rem;
     text-align: right;
     border-radius: 0 0 @border-radius-base @border-radius-base;
     button + button {
-      margin-left: 8px;
+      margin-left: 0.08rem;
       margin-bottom: 0;
     }
   }
@@ -136,7 +136,7 @@
 @media (max-width: @screen-sm-max) {
   .@{dialog-prefix-cls} {
     width: auto !important;
-    margin: 10px;
+    margin: 0.1rem;
   }
   .vertical-center-modal {
     .@{dialog-prefix-cls} {

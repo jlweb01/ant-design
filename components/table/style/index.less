@@ -44,12 +44,12 @@
     .@{iconfont-css-prefix}-filter,
     .@{table-prefix-cls}-filter-icon {
       position: relative;
-      margin-left: 8px;
+      margin-left: 0.08rem;
       font-size: @font-size-base;
       cursor: pointer;
       color: @table-header-icon-color;
       transition: all .3s;
-      width: 14px;
+      width: 0.14rem;
       font-weight: normal;
       vertical-align: text-bottom;
 
@@ -59,7 +59,7 @@
     }
 
     .@{table-prefix-cls}-column-sorter + .@{iconfont-css-prefix}-filter {
-      margin-left: 4px;
+      margin-left: 0.04rem;
     }
 
     .@{table-prefix-cls}-filter-selected.@{iconfont-css-prefix}-filter {
@@ -116,10 +116,10 @@
     border-top: @border-width-base @border-style-base @border-color-split;
     &:before {
       content: '';
-      height: 1px;
+      height: 0.01rem;
       background: @table-header-bg;
       position: absolute;
-      top: -1px;
+      top: -0.01rem;
       width: 100%;
       left: 0;
     }
@@ -132,7 +132,7 @@
   &-title {
     padding: @table-padding-vertical 0;
     position: relative;
-    top: 1px;
+    top: 0.01rem;
     border-radius: @border-radius-base @border-radius-base 0 0;
   }
 
@@ -176,15 +176,15 @@
   }
 
   &-thead > tr > th.@{table-prefix-cls}-selection-column-custom {
-    padding-left: 16px;
+    padding-left: 0.16rem;
     padding-right: 0;
   }
 
   &-thead > tr > th.@{table-prefix-cls}-selection-column,
   &-tbody > tr > td.@{table-prefix-cls}-selection-column {
     text-align: center;
-    min-width: 62px;
-    width: 62px;
+    min-width: 0.62rem;
+    width: 0.62rem;
     .@{ant-prefix}-radio-wrapper {
       margin-right: 0;
     }
@@ -193,8 +193,8 @@
   &-expand-icon-th,
   &-row-expand-icon-cell {
     text-align: center;
-    min-width: 50px;
-    width: 50px;
+    min-width: 0.5rem;
+    width: 0.5rem;
   }
 
   &-header {
@@ -213,26 +213,26 @@
       opacity: 0.5;
     }
     .@{table-prefix-cls}-spin-holder {
-      height: 20px;
-      line-height: 20px;
+      height: 0.2rem;
+      line-height: 0.2rem;
       left: 50%;
       top: 50%;
-      margin-left: -30px;
+      margin-left: -0.3rem;
       position: absolute;
     }
     .@{table-prefix-cls}-with-pagination {
-      margin-top: -20px;
+      margin-top: -0.2rem;
     }
     .@{table-prefix-cls}-without-pagination {
-      margin-top: 10px;
+      margin-top: 0.1rem;
     }
   }
 
   &-column-sorter {
     position: relative;
-    margin-left: 8px;
+    margin-left: 0.08rem;
     display: inline-block;
-    width: 14px;
+    width: 0.14rem;
     height: @font-size-base;
     vertical-align: middle;
     text-align: center;
@@ -242,9 +242,9 @@
     &-up,
     &-down {
       display: block;
-      width: 14px;
-      height: @font-size-base / 2 - 1px;
-      line-height: @font-size-base / 2 - 1px;
+      width: 0.14rem;
+      height: @font-size-base / 2 - 0.01rem;
+      line-height: @font-size-base / 2 - 0.01rem;
       cursor: pointer;
       position: relative;
       &:hover .@{iconfont-css-prefix} {
@@ -260,8 +260,8 @@
       &:after {
         position: absolute;
         content: '';
-        height: 30px;
-        width: 14px;
+        height: 0.3rem;
+        width: 0.14rem;
         left: 0;
       }
     }
@@ -276,20 +276,20 @@
 
     .@{iconfont-css-prefix}-caret-up,
     .@{iconfont-css-prefix}-caret-down {
-      .iconfont-size-under-12px(8px);
-      line-height: 4px;
-      height: 4px;
+      .iconfont-size-under-12px(0.08rem);
+      line-height: 0.04rem;
+      height: 0.04rem;
       transition: all .3s;
       position: relative;
       display: block;
     }
 
     &-down {
-      margin-top: 1.5px;
+      margin-top: 1.0.05rem;
     }
 
     .@{iconfont-css-prefix}-caret-up {
-      margin-top: 0.5px;
+      margin-top: 0.005rem;
     }
   }
 
@@ -350,18 +350,18 @@
     color: @text-color-secondary;
     z-index: 1;
     .@{iconfont-css-prefix} {
-      margin-right: 4px;
+      margin-right: 0.04rem;
     }
   }
 
   &-pagination.@{ant-prefix}-pagination {
-    margin: 16px 0;
+    margin: 0.16rem 0;
     float: right;
   }
 
   &-filter-dropdown {
-    min-width: 96px;
-    margin-left: -8px;
+    min-width: 0.96rem;
+    margin-left: -0.08rem;
     background: @component-background;
     border-radius: @border-radius-base;
     box-shadow: @box-shadow-base;
@@ -373,7 +373,7 @@
 
       // https://github.com/ant-design/ant-design/issues/4916
       &-without-submenu {
-        max-height: 400px;
+        max-height: 4rem;
         overflow-x: hidden;
       }
 
@@ -390,7 +390,7 @@
         .@{ant-prefix}-dropdown-menu-submenu-title:after {
           color: @primary-color;
           font-weight: bold;
-          text-shadow: 0 0 2px @primary-2;
+          text-shadow: 0 0 0.02rem @primary-2;
         }
       }
     }
@@ -406,7 +406,7 @@
 
     &-btns {
       overflow: hidden;
-      padding: 7px 8px;
+      padding: 0.07rem 0.08rem;
       border-top: @border-width-base @border-style-base @border-color-split;
     }
 
@@ -429,7 +429,7 @@
 
   &-selection {
     &-select-all-custom {
-      margin-right: 4px !important;
+      margin-right: 0.04rem !important;
     }
 
     .@{iconfont-css-prefix}-down {
@@ -438,9 +438,9 @@
     }
 
     &-menu {
-      min-width: 96px;
-      margin-top: 5px;
-      margin-left: -30px;
+      min-width: 0.96rem;
+      margin-top: 0.05rem;
+      margin-left: -0.3rem;
       background: @component-background;
       border-radius: @border-radius-base;
       box-shadow: @box-shadow-base;
@@ -465,10 +465,10 @@
     &-expand-icon {
       cursor: pointer;
       display: inline-block;
-      width: 17px;
-      height: 17px;
+      width: 0.17rem;
+      height: 0.17rem;
       text-align: center;
-      line-height: 14px;
+      line-height: 0.14rem;
       border: @border-width-base @border-style-base @border-color-split;
       user-select: none;
       background: @component-background;
@@ -502,7 +502,7 @@
   }
 
   .@{table-prefix-cls}-row-indent + .@{table-prefix-cls}-row-expand-icon {
-    margin-right: 8px;
+    margin-right: 0.08rem;
   }
 
   &-scroll {
@@ -529,8 +529,8 @@
 
   &-fixed-header &-scroll &-header {
     overflow: scroll;
-    padding-bottom: 20px;
-    margin-bottom: -20px;
+    padding-bottom: 0.2rem;
+    margin-bottom: -0.2rem;
   }
 
   &-fixed-left,
@@ -553,14 +553,14 @@
 
   &-fixed-left {
     left: 0;
-    box-shadow: 6px 0 6px -4px @shadow-color;
+    box-shadow: 0.06rem 0 0.06rem -0.04rem @shadow-color;
     .@{table-prefix-cls}-header {
       overflow-y: hidden;
     }
     // hide scrollbar in left fixed columns
     .@{table-prefix-cls}-body-inner {
-      margin-right: -20px;
-      padding-right: 20px;
+      margin-right: -0.2rem;
+      padding-right: 0.2rem;
     }
     .@{table-prefix-cls}-fixed-header & .@{table-prefix-cls}-body-inner {
       padding-right: 0;
@@ -576,7 +576,7 @@
 
   &-fixed-right {
     right: 0;
-    box-shadow: -6px 0 6px -4px @shadow-color;
+    box-shadow: -0.06rem 0 0.06rem -0.04rem @shadow-color;
     &,
     table {
       border-radius: 0 @border-radius-base 0 0;

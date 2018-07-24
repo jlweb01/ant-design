@@ -9,11 +9,11 @@
   border-top: @border-width-base @border-style-base @border-color-base;
 
   &-month-select {
-    margin-left: 5px;
+    margin-left: 0.05rem;
   }
 
   &-header {
-    padding: 11px 16px 11px 0;
+    padding: 0.11rem 0.16rem 0.11rem 0;
     text-align: right;
 
     .@{ant-prefix}-select-dropdown {
@@ -21,14 +21,14 @@
     }
 
     .@{ant-prefix}-radio-group {
-      margin-left: 8px;
+      margin-left: 0.08rem;
       text-align: left;
     }
 
     label.@{ant-prefix}-radio-button {
-      height: 22px;
-      line-height: 20px;
-      padding: 0 10px;
+      height: 0.22rem;
+      line-height: 0.2rem;
+      padding: 0 0.1rem;
     }
   }
 
@@ -38,7 +38,7 @@
   }
 
   &-calendar-body {
-    padding: 8px 12px;
+    padding: 0.08rem 0.12rem;
   }
 
   table {
@@ -46,7 +46,7 @@
     max-width: 100%;
     background-color: transparent;
     width: 100%;
-    height: 256px;
+    height: 2.56rem;
   }
 
   table,
@@ -65,9 +65,9 @@
   }
 
   &-column-header {
-    line-height: 18px;
+    line-height: 0.18rem;
     padding: 0;
-    width: 33px;
+    width: 0.33rem;
     text-align: center;
     .@{full-calendar-prefix-cls}-column-header-inner {
       display: block;
@@ -92,11 +92,11 @@
     margin: 0 auto;
     color: @text-color;
     border-radius: @border-radius-sm;
-    width: 24px;
-    height: 24px;
+    width: 0.24rem;
+    height: 0.24rem;
     padding: 0;
     background: transparent;
-    line-height: 24px;
+    line-height: 0.24rem;
     transition: all .3s;
 
     &:hover {
@@ -111,12 +111,12 @@
   }
 
   &-month-panel-cell &-value {
-    width: 48px;
+    width: 0.48rem;
   }
 
   &-today &-value,
   &-month-panel-current-cell &-value {
-    box-shadow: 0 0 0 1px @primary-color inset;
+    box-shadow: 0 0 0 0.01rem @primary-color inset;
   }
 
   &-selected-day &-value,
@@ -150,7 +150,7 @@
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: -9px;
+    bottom: -0.09rem;
   }
 
   &-fullscreen {
@@ -163,23 +163,23 @@
 
   &-fullscreen &-header {
     .@{ant-prefix}-radio-group {
-      margin-left: 16px;
+      margin-left: 0.16rem;
     }
     label.@{ant-prefix}-radio-button {
       height: @input-height-base;
-      line-height: @input-height-base - 2px;
+      line-height: @input-height-base - 0.02rem;
     }
   }
 
   &-fullscreen &-month,
   &-fullscreen &-date {
     text-align: left;
-    margin: 0 4px;
+    margin: 0 0.04rem;
     display: block;
     color: @text-color;
-    height: 116px;
-    padding: 4px 8px;
-    border-top: 2px solid @border-color-split;
+    height: 1.16rem;
+    padding: 0.04rem 0.08rem;
+    border-top: 0.02rem solid @border-color-split;
     transition: background .3s;
 
     &:hover {
@@ -194,8 +194,8 @@
 
   &-fullscreen &-column-header {
     text-align: right;
-    padding-right: 12px;
-    padding-bottom: 5px;
+    padding-right: 0.12rem;
+    padding-bottom: 0.05rem;
   }
 
   &-fullscreen &-value {
@@ -235,7 +235,7 @@
   }
 
   &-fullscreen &-content {
-    height: 88px;
+    height: 0.88rem;
     overflow-y: auto;
     position: static;
     width: auto;

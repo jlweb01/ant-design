@@ -10,22 +10,22 @@
 .@{alert-prefix-cls} {
   .reset-component;
   position: relative;
-  padding: 8px 15px 8px 37px;
+  padding: 0.08rem 0.15rem 0.08rem 0.37rem;
   border-radius: @border-radius-base;
 
   &&-no-icon {
-    padding: 8px 15px;
+    padding: 0.08rem 0.15rem;
   }
 
   &-icon {
-    top: 8px + @font-size-base * @line-height-base / 2 - @font-size-base / 2 + 1px;
-    left: 16px;
+    top: 0.08rem + @font-size-base * @line-height-base / 2 - @font-size-base / 2 + 0.01rem;
+    left: 0.16rem;
     position: absolute;
   }
 
   &-description {
     font-size: @font-size-base;
-    line-height: 22px;
+    line-height: 0.22rem;
     display: none;
   }
 
@@ -64,9 +64,9 @@
   &-close-icon {
     font-size: @font-size-sm;
     position: absolute;
-    right: 16px;
-    top: 8px;
-    line-height: 22px;
+    right: 0.16rem;
+    top: 0.08rem;
+    line-height: 0.22rem;
     overflow: hidden;
     cursor: pointer;
 
@@ -81,11 +81,11 @@
 
   &-close-text {
     position: absolute;
-    right: 16px;
+    right: 0.16rem;
   }
 
   &-with-description {
-    padding: 15px 15px 15px 64px;
+    padding: 0.15rem 0.15rem 0.15rem 0.64rem;
     position: relative;
     border-radius: @border-radius-base;
     color: @alert-text-color;
@@ -93,20 +93,20 @@
   }
 
   &-with-description&-no-icon {
-    padding: 15px;
+    padding: 0.15rem;
   }
 
   &-with-description &-icon {
     position: absolute;
-    top: 16px;
-    left: 24px;
-    font-size: 24px;
+    top: 0.16rem;
+    left: 0.24rem;
+    font-size: 0.24rem;
   }
 
   &-with-description &-close-icon {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 0.16rem;
+    right: 0.16rem;
     cursor: pointer;
     font-size: @font-size-base;
   }
@@ -115,7 +115,7 @@
     font-size: @font-size-lg;
     color: @alert-message-color;
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 0.04rem;
   }
 
   &-with-description &-description {

@@ -3,7 +3,7 @@
 @import "../../input/style/mixin";
 
 @timepicker-prefix-cls: ~"@{ant-prefix}-time-picker";
-@timepicker-item-height: 32px;
+@timepicker-item-height: 0.32rem;
 
 .@{timepicker-prefix-cls}-panel {
   .reset-component;
@@ -21,7 +21,7 @@
     box-shadow: @box-shadow-base;
     background-clip: padding-box;
     overflow: hidden;
-    left: -2px;
+    left: -0.02rem;
   }
 
   &-input {
@@ -37,7 +37,7 @@
     &-wrap {
       box-sizing: border-box;
       position: relative;
-      padding: 7px 2px 7px @control-padding-horizontal;
+      padding: 0.07rem 0.02rem 0.07rem @control-padding-horizontal;
       border-bottom: @border-width-base @border-style-base @border-color-split;
     }
 
@@ -48,23 +48,23 @@
 
   &-clear-btn {
     position: absolute;
-    right: 8px;
+    right: 0.08rem;
     cursor: pointer;
     overflow: hidden;
-    width: 20px;
-    height: 20px;
+    width: 0.2rem;
+    height: 0.2rem;
     text-align: center;
-    line-height: 20px;
-    top: 7px;
+    line-height: 0.2rem;
+    top: 0.07rem;
     margin: 0;
   }
 
   &-clear-btn:after {
-    font-size: @font-size-base - 2px;
+    font-size: @font-size-base - 0.02rem;
     color: @disabled-color;
     display: inline-block;
     line-height: 1;
-    width: 20px;
+    width: 0.2rem;
     transition: color 0.3s ease;
     .iconfont-font("\e62e");
   }
@@ -152,7 +152,7 @@
   }
 
   &-addon {
-    padding: 8px;
+    padding: 0.08rem;
     border-top: @border-width-base @border-style-base @border-color-split;
   }
 
@@ -187,7 +187,7 @@
   display: inline-block;
   outline: none;
   transition: opacity .3s;
-  width: 128px;
+  width: 1.28rem;
 
   &-input {
     .input;
@@ -204,13 +204,13 @@
     position: absolute;
     user-select: none;
     transition: all .3s @ease-in-out;
-    width: 14px;
-    height: 14px;
-    line-height: 14px;
-    right: @control-padding-horizontal - 1px;
+    width: 0.14rem;
+    height: 0.14rem;
+    line-height: 0.14rem;
+    right: @control-padding-horizontal - 0.01rem;
     color: @disabled-color;
     top: 50%;
-    margin-top: -7px;
+    margin-top: -0.07rem;
     &:after {
       content: "\e641";
       font-family: "anticon";
@@ -229,6 +229,6 @@
   }
 
   &-small &-icon {
-    right: @control-padding-horizontal-sm - 1px;
+    right: @control-padding-horizontal-sm - 0.01rem;
   }
 }

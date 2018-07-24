@@ -12,17 +12,17 @@
 
   &-item {
     position: relative;
-    padding: 0 0 20px;
+    padding: 0 0 0.2rem;
     list-style: none;
     margin: 0;
     font-size: @font-size-base;
 
     &-tail {
       position: absolute;
-      left: 4px;
+      left: 0.04rem;
       top: 0.75em;
       height: 100%;
-      border-left: 2px solid @timeline-color;
+      border-left: 0.02rem solid @timeline-color;
     }
 
     &-pending &-head {
@@ -35,11 +35,11 @@
 
     &-head {
       position: absolute;
-      width: 10px;
-      height: 10px;
+      width: 0.1rem;
+      height: 0.1rem;
       background-color: @component-background;
-      border-radius: 100px;
-      border: 2px solid transparent;
+      border-radius: 1rem;
+      border: 0.02rem solid transparent;
 
       &-blue {
         border-color: @primary-color;
@@ -63,17 +63,17 @@
       border: 0;
       height: auto;
       border-radius: 0;
-      padding: 3px 1px;
+      padding: 0.03rem 0.01rem;
       transform: translate(-50%, -50%);
-      top: 5.5px;
-      left: 5px;
+      top: 5.0.05rem;
+      left: 0.05rem;
       width: auto;
     }
 
     &-content {
-      margin: 0 0 0 18px;
+      margin: 0 0 0 0.18rem;
       position: relative;
-      top: -(@font-size-base * @line-height-base - @font-size-base) + 1px;
+      top: -(@font-size-base * @line-height-base - @font-size-base) + 0.01rem;
     }
 
     &-last {
@@ -81,13 +81,13 @@
         display: none;
       }
       .@{timeline-prefix-cls}-item-content {
-        min-height: 48px;
+        min-height: 0.48rem;
       }
     }
   }
 
   &&-pending &-item-last &-item-tail {
-    border-left: 2px dotted @timeline-color;
+    border-left: 0.02rem dotted @timeline-color;
     display: block;
   }
 
@@ -97,11 +97,11 @@
 
   &&-reverse &-item-pending {
     .@{timeline-prefix-cls}-item-tail {
-      border-left: 2px dotted @timeline-color;
+      border-left: 0.02rem dotted @timeline-color;
       display: block;
     }
     .@{timeline-prefix-cls}-item-content {
-      min-height: 48px;
+      min-height: 0.48rem;
     }
   }
 }

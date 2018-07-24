@@ -19,7 +19,7 @@
   display: inline-block;
   position: relative;
   white-space: nowrap;
-  margin-right: 8px;
+  margin-right: 0.08rem;
   cursor: pointer;
 }
 
@@ -46,7 +46,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 1px solid @radio-dot-color;
+    border: 0.01rem solid @radio-dot-color;
     content: '';
     animation: antRadioEffect 0.36s ease-in-out;
     animation-fill-mode: both;
@@ -58,12 +58,12 @@
   }
   &-inner {
     &:after {
-      @radio-dot-size: @radio-size - 8px;
+      @radio-dot-size: @radio-size - 0.08rem;
       position: absolute;
       width: @radio-dot-size;
       height: @radio-dot-size;
-      left: (@radio-size - @radio-dot-size) / 2 - 1px;
-      top: (@radio-size - @radio-dot-size) / 2 - 1px;
+      left: (@radio-size - @radio-dot-size) / 2 - 0.01rem;
+      top: (@radio-size - @radio-dot-size) / 2 - 0.01rem;
       border-radius: @radio-dot-size;
       display: table;
       border-top: 0;
@@ -81,9 +81,9 @@
     display: block;
     width: @radio-size;
     height: @radio-size;
-    border-width: 1px;
+    border-width: 0.01rem;
     border-style: solid;
-    border-radius: 100px;
+    border-radius: 1rem;
     border-color: @border-color-base;
     background-color: @radio-button-bg;
     transition: all @radio-duration;
@@ -133,14 +133,14 @@
 }
 
 span.@{radio-prefix-cls} + * {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 0.08rem;
+  padding-right: 0.08rem;
 }
 
 .@{radio-prefix-cls}-button-wrapper {
   margin: 0;
   height: @btn-height-base;
-  line-height: @btn-height-base - 2px;
+  line-height: @btn-height-base - 0.02rem;
   color: @radio-button-color;
   display: inline-block;
   transition: all 0.3s ease;
@@ -149,9 +149,9 @@ span.@{radio-prefix-cls} + * {
   border-left: 0;
   // strange align fix for chrome but works
   // https://gw.alipayobjects.com/zos/rmsportal/VFTfKXJuogBAXcvfAUWJ.gif
-  border-top-width: @border-width-base + 0.02px;
+  border-top-width: @border-width-base + 0.002rem;
   background: @radio-button-bg;
-  padding: 0 @padding-md - 1px;
+  padding: 0 @padding-md - 0.01rem;
   position: relative;
 
   a {
@@ -167,14 +167,14 @@ span.@{radio-prefix-cls} + * {
 
   .@{radio-group-prefix-cls}-large & {
     height: @input-height-lg;
-    line-height: @input-height-lg - 2px;
+    line-height: @input-height-lg - 0.02rem;
     font-size: @font-size-lg;
   }
 
   .@{radio-group-prefix-cls}-small & {
     height: @input-height-sm;
-    line-height: @input-height-sm - 2px;
-    padding: 0 @control-padding-horizontal-sm - 1px;
+    line-height: @input-height-sm - 0.02rem;
+    padding: 0 @control-padding-horizontal-sm - 0.01rem;
   }
 
   &:not(:first-child) {
@@ -182,8 +182,8 @@ span.@{radio-prefix-cls} + * {
       content: "";
       display: block;
       top: 0;
-      left: -1px;
-      width: 1px;
+      left: -0.01rem;
+      width: 0.01rem;
       height: 100%;
       position: absolute;
       background-color: @border-color-base;
@@ -220,7 +220,7 @@ span.@{radio-prefix-cls} + * {
     background: @radio-button-bg;
     border-color: @radio-dot-color;
     color: @radio-dot-color;
-    box-shadow: -1px 0 0 0 @radio-dot-color;
+    box-shadow: -0.01rem 0 0 0 @radio-dot-color;
     z-index: 1;
     &::before {
       background-color: @radio-dot-color !important;
@@ -233,13 +233,13 @@ span.@{radio-prefix-cls} + * {
 
     &:hover {
       border-color: @radio-button-hover-color;
-      box-shadow: -1px 0 0 0 @radio-button-hover-color;
+      box-shadow: -0.01rem 0 0 0 @radio-button-hover-color;
       color: @radio-button-hover-color;
     }
 
     &:active {
       border-color: @radio-button-active-color;
-      box-shadow: -1px 0 0 0 @radio-button-active-color;
+      box-shadow: -0.01rem 0 0 0 @radio-button-active-color;
       color: @radio-button-active-color;
     }
   }

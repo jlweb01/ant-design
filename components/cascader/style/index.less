@@ -54,10 +54,10 @@
     &-label {
       position: absolute;
       left: 0;
-      height: 20px;
-      line-height: 20px;
+      height: 0.2rem;
+      line-height: 0.2rem;
       top: 50%;
-      margin-top: -10px;
+      margin-top: -0.1rem;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
@@ -74,10 +74,10 @@
       top: 50%;
       font-size: @font-size-sm;
       color: @disabled-color;
-      width: 12px;
-      height: 12px;
-      margin-top: -6px;
-      line-height: 12px;
+      width: 0.12rem;
+      height: 0.12rem;
+      margin-top: -0.06rem;
+      line-height: 0.12rem;
       cursor: pointer;
       transition: color 0.3s ease, opacity 0.15s ease;
       &:hover {
@@ -95,11 +95,11 @@
       z-index: 1;
       top: 50%;
       right: @control-padding-horizontal;
-      width: 12px;
-      height: 12px;
-      font-size: 12px;
-      margin-top: -6px;
-      line-height: 12px;
+      width: 0.12rem;
+      height: 0.12rem;
+      font-size: 0.12rem;
+      margin-top: -0.06rem;
+      line-height: 0.12rem;
       color: @disabled-color;
       &:before {
         transition: transform .2s;
@@ -158,8 +158,8 @@
   &-menu {
     display: inline-block;
     vertical-align: top;
-    min-width: 111px;
-    height: 180px;
+    min-width: 1.11rem;
+    height: 1.8rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -170,7 +170,7 @@
     }
     &:last-child {
       border-right-color: transparent;
-      margin-right: -1px;
+      margin-right: -0.01rem;
       border-radius: 0 @border-radius-base @border-radius-base 0;
     }
     &:only-child {
@@ -178,8 +178,8 @@
     }
   }
   &-menu-item {
-    padding: 5px @control-padding-horizontal;
-    line-height: 22px;
+    padding: 0.05rem @control-padding-horizontal;
+    line-height: 0.22rem;
     cursor: pointer;
     white-space: nowrap;
     transition: all 0.3s;
@@ -202,10 +202,10 @@
     }
     &-expand {
       position: relative;
-      padding-right: 24px;
+      padding-right: 0.24rem;
       &:after {
         .iconfont-font("\e61f");
-        .iconfont-size-under-12px(8px);
+        .iconfont-size-under-12px(0.08rem);
         color: @text-color-secondary;
         position: absolute;
         right: @control-padding-horizontal;

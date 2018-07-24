@@ -112,7 +112,7 @@
   > .@{btnClassName},
   > span > .@{btnClassName} {
     position: relative;
-    line-height: @btn-height-base - 2px;
+    line-height: @btn-height-base - 0.02rem;
 
     &:hover,
     &:focus,
@@ -130,13 +130,13 @@
   &-lg > .@{btnClassName},
   &-lg > span > .@{btnClassName} {
     .button-size(@btn-height-lg; @btn-padding-lg; @btn-font-size-lg; 0);
-    line-height: @btn-height-lg - 2px;
+    line-height: @btn-height-lg - 0.02rem;
   }
 
   &-sm > .@{btnClassName},
   &-sm > span > .@{btnClassName} {
     .button-size(@btn-height-sm; @btn-padding-sm; @font-size-base; 0);
-    line-height: @btn-height-sm - 2px;
+    line-height: @btn-height-sm - 0.02rem;
     > .@{iconfont-css-prefix} {
       font-size: @font-size-base;
     }
@@ -231,11 +231,11 @@
 // circle button: the content only contains icon
 .btn-circle(@btnClassName: btn) {
   .square(@btn-circle-size);
-  .button-size(@btn-circle-size; 0; @font-size-base + 2px; 50%);
+  .button-size(@btn-circle-size; 0; @font-size-base + 0.02rem; 50%);
 
   &.@{btnClassName}-lg {
     .square(@btn-circle-size-lg);
-    .button-size(@btn-circle-size-lg; 0; @btn-font-size-lg + 2px; 50%);
+    .button-size(@btn-circle-size-lg; 0; @btn-font-size-lg + 0.02rem; 50%);
   }
 
   &.@{btnClassName}-sm {
@@ -256,7 +256,7 @@
   > span + span,
   & + .@{btnClassName},
   & + & {
-    margin-left: -1px;
+    margin-left: -0.01rem;
   }
 
   .@{btnClassName}-primary + .@{btnClassName}:not(.@{btnClassName}-primary):not([disabled]) {
@@ -321,13 +321,13 @@
     > .@{btnClassName}:last-child {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
-      padding-right: 8px;
+      padding-right: 0.08rem;
     }
   }
 
   & > &:last-child:not(:first-child) > .@{btnClassName}:first-child {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-    padding-left: 8px;
+    padding-left: 0.08rem;
   }
 }

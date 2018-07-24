@@ -21,11 +21,11 @@
 @error-tail-color: @wait-tail-color;
 @steps-background: @component-background;
 
-@steps-icon-size: 32px;
-@steps-small-icon-size: 24px;
-@steps-dot-size: 8px;
-@steps-current-dot-size: 10px;
-@steps-desciption-max-width: 140px;
+@steps-icon-size: 0.32rem;
+@steps-small-icon-size: 0.24rem;
+@steps-dot-size: 0.08rem;
+@steps-current-dot-size: 0.1rem;
+@steps-desciption-max-width: 1.4rem;
 
 .@{steps-prefix-cls} {
   .reset-component;
@@ -64,13 +64,13 @@
     text-align: center;
     border-radius: @steps-icon-size;
     font-size: @font-size-lg;
-    margin-right: 8px;
+    margin-right: 0.08rem;
     transition: background-color .3s, border-color .3s;
     font-family: @font-family-no-number;
 
     > .@{steps-prefix-cls}-icon {
       line-height: 1;
-      top: -1px;
+      top: -0.01rem;
       color: @primary-color;
       position: relative;
     }
@@ -79,14 +79,14 @@
     position: absolute;
     left: 0;
     width: 100%;
-    top: 12px;
-    padding: 0 10px;
+    top: 0.12rem;
+    padding: 0 0.1rem;
     &:after {
       content: '';
       display: inline-block;
       background: @border-color-split;
-      height: 1px;
-      border-radius: 1px;
+      height: 0.01rem;
+      border-radius: 0.01rem;
       width: 100%;
       transition: background .3s;
     }
@@ -95,13 +95,13 @@
     font-size: @font-size-lg;
     color: @text-color;
     display: inline-block;
-    padding-right: 16px;
+    padding-right: 0.16rem;
     position: relative;
     line-height: @steps-icon-size;
     &:after {
       content: '';
-      height: 1px;
-      width: 9999px;
+      height: 0.01rem;
+      width: 99.99rem;
       background: @wait-tail-color;
       display: block;
       position: absolute;
@@ -134,7 +134,7 @@
 
 .@{steps-prefix-cls}-horizontal:not(.@{steps-prefix-cls}-label-vertical) {
   .@{steps-prefix-cls}-item {
-    margin-right: 16px;
+    margin-right: 0.16rem;
     white-space: nowrap;
     &:last-child {
       margin-right: 0;

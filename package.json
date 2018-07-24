@@ -131,6 +131,8 @@
     "eslint-tinker": "^0.5.0",
     "fetch-jsonp": "^1.0.3",
     "glob": "^7.1.1",
+    "gulp": "^3.9.1",
+    "gulp-replace": "^1.0.0",
     "immutability-helper": "^2.5.0",
     "intersection-observer": "^0.5.0",
     "jest": "^23.2.0",
